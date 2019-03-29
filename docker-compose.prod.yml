@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  front:
+    image: antoine/nuxt
+    expose:
+    - "80"
+    - "443"
+    volumes:
+    - ./:/usr/src/app/
+    environment:
+      VIRTUAL_HOST: node.antoinebrossault.com
+      LETSENCRYPT_HOST: node.antoinebrossault.com
+      LETSENCRYPT_EMAIL: antoinebrossault@gmail.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
+
+

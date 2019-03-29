@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+}
+
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+input, button  {
+    outline: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-grey-light-1);
+}
